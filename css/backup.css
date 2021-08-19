@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #79443b;
+    background-color: c0c6e1;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #c0c6e1;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.menuPrincipal{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.menuEscritos{
+    width: 80%;
+    height: 18vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.menuBio {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.fotoHits {
+    max-height: 330px;
+    width: 600px;
+    margin: 20px auto;
+    object-fit: cover;
+
+}
+
+.frase-escritos {
+    margin: 9px auto;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}    
+
+a{
+    display: block;
+    padding: 8px;
+}
+
+.tabla1{
+    color: rgb(37, 71, 87);
+    border: 2px solid #000;
+    text-align: left;
+    vertical-align: top;
+    border-spacing: 0;    
+}
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+}
+.tabla2{
+    color: rgb(37, 71, 87);
+    border: 2px solid #000;
+    text-align: left;
+    vertical-align: top;
+    border-spacing: 0;
+}
+
+p{
+    font-weight: 300;    
+}
+
+.imagenPrincipal{
+    display: flex;
+    align-items: flex-start;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 50px;
+    height: 100vh;
+    background-image: url(https://i0.wp.com/www.sectorcine.com/wp-content/uploads/sectorcine/articulos/bob-dylan-pelicula.jpg?resize=1280%2C720&ssl=1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.imag2{
+    width: 375px; 
+    height: 562px;
+    margin-left: 70vh;
+}
+.container4{
+    text-align: right;
+    padding: 50px;
+    margin: 50px;
+    border: 2px solid #000;
+}
+
+
+.form1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    margin: 7px;
+    font-style: italic;
+    background: rgb(122, 158, 175);
+    color: white;
+    font-weight: 150;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.item0:hover, .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
+    transform: scale(1.5);
+}
+
+.flex-item {
+    transition: all 2s;
+}
+
+.bio1 {
+    display: grid;
+    grid-template-areas:
+    "Foto Foto Texto1 Texto1"
+    "Foto Foto Texto2 Texto2"
+    "pieDePagina pieDePagina pieDePagina pieDePagina";
+}
+
+.Foto { 
+    grid-area: Foto;
+    max-width: 500px; 
+    margin-left: 10px;    
+    border-radius: 5px;
+}
+
+.Texto1 { 
+    grid-area: Texto1; 
+    padding: 20px;
+}
+
+.Texto2 { 
+    grid-area: Texto2; 
+    padding: 20px;
+}
+
+@media (min-width:351px) and (max-width: 540px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        padding: 20px;
+    }
+    .container1{
+        font-style: italic;
+        color: black;
+        text-align: center ;
+        font-size: 25px;
+        height: 100vh;
+        background-image: url(https://elcultural.com/wp-content/uploads/imgNoticias/2015/8576_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 750px) {
+
+    p{
+        padding: 20px;
+    }
+    .container1{
+        font-style: italic;
+        color: black;
+        text-align: center ;
+        font-size: 35px;
+        height: 100vh;
+        background-image: url(https://elcultural.com/wp-content/uploads/imgNoticias/2015/8576_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+}
+
+@media (min-width:0px) and (max-width: 350px) {
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        padding: 10px;
+    }
+    .container1{
+        font-style: italic;
+        color: black;
+        text-align: center ;
+        font-size: 15px;
+        height: 100vh;
+        background-image: url(https://elcultural.com/wp-content/uploads/imgNoticias/2015/8576_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+}

@@ -1,0 +1,27 @@
+@import'../variables/variables';
+
+.menuBio {
+    @include standard-menu;
+}
+
+.bio1 {
+    display: grid;
+    grid-template-areas:
+    "Foto Foto Texto1 Texto1"
+    "Foto Foto Texto2 Texto2";
+}
+.Foto { 
+    grid-area: Foto;
+    max-width: 500px; 
+    margin-left: 10px;    
+    border-radius: 5px;
+}
+.Texto1 { 
+    grid-area: Texto1; 
+    padding: 20px;
+}
+
+.Texto2 { 
+    grid-area: Texto2; 
+    padding: 20px;
+}

@@ -1,0 +1,23 @@
+.fotoHits {
+    max-height: 330px;
+    width: 600px;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+
+.tabla1{
+    @include tablas;
+}
+
+.tabla2{
+    @include tablas;
+}
+
+th, td {
+    @include boxModel (none, 6px, 1px solid #000);
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border-collapse: collapse;
+}

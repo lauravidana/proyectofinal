@@ -1,0 +1,163 @@
+.menuBio {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.bio1 {
+  display: grid;
+  grid-template-areas: "Foto Foto Texto1 Texto1" "Foto Foto Texto2 Texto2";
+}
+
+.Foto {
+  grid-area: Foto;
+  max-width: 500px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.Texto1 {
+  grid-area: Texto1;
+  padding: 20px;
+}
+
+.Texto2 {
+  grid-area: Texto2;
+  padding: 20px;
+}
+
+.form1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.fotoHits {
+  max-height: 330px;
+  width: 600px;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+.tabla1 {
+  color: #254757;
+  border: 2px solid #000;
+  text-align: left;
+  vertical-align: top;
+  border-spacing: 0;
+}
+
+.tabla2 {
+  color: #254757;
+  border: 2px solid #000;
+  text-align: left;
+  vertical-align: top;
+  border-spacing: 0;
+}
+
+th, td {
+  margin: none;
+  padding: 6px;
+  border: 1px solid #000;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.imagenPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: left;
+  font-size: 50px;
+  height: 100vh;
+  background-image: url(https://i0.wp.com/www.sectorcine.com/wp-content/uploads/sectorcine/articulos/bob-dylan-pelicula.jpg?resize=1280%2C720&ssl=1);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.imagenPrincipal .menuPrincipal {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 80%;
+  height: 10vh;
+  position: absolute;
+}
+
+.menuEscritos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 80%;
+  height: 10vh;
+}
+
+.frase-escritos {
+  margin: 9px auto;
+}
+
+.main {
+  background: #e4dfdf;
+}
+.main__container {
+  text-align: right;
+  padding: 50px;
+  margin: 50px;
+  border: 2px solid #000;
+}
+.main__flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main__flexContainer .flex-item {
+  margin: 7px;
+  padding: 15px;
+  border: none;
+  width: 300px;
+  height: 300px;
+  font-style: italic;
+  background: #7a9eaf;
+  color: white;
+  font-weight: 150;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+.main .item0:hover, .main .item1:hover, .main .item2:hover, .main .item3:hover, .main .item4:hover, .main .item5:hover, .main .item6:hover {
+  transform: scale(1.5);
+}
+.main .flex-item {
+  transition: all 2s;
+}
+
+body {
+  color: #79443b;
+  background-color: #c0c6e1;
+}
+
+p {
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-color: #c0c6e1;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

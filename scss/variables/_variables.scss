@@ -1,0 +1,35 @@
+
+@mixin standard-menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;   
+}
+
+@mixin menu-2 {
+    @include standard-menu;
+    width: 80%;
+    height: 10vh;
+}
+
+@mixin tablas {
+    color: rgb(37, 71, 87);
+    border: 2px solid #000;
+    text-align: left;
+    vertical-align: top;
+    border-spacing: 0;
+}
+
+@mixin flex($display, $direction, $jc, $ai, $fw){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
+
+@mixin boxModel ($margin, $padding, $border){
+    margin: $margin;
+    padding: $padding;
+    border: $border;  
+}
+

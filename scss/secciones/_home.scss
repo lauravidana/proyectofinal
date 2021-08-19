@@ -1,0 +1,20 @@
+@import '../variables/variables';
+
+.imagenPrincipal{
+    @include flex(flex, row, center, flex-start, wrap);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 50px;
+    height: 100vh;
+    background-image: url(https://i0.wp.com/www.sectorcine.com/wp-content/uploads/sectorcine/articulos/bob-dylan-pelicula.jpg?resize=1280%2C720&ssl=1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    .menuPrincipal{
+        @include menu-2;
+        position: absolute;
+    }
+}
+

@@ -1,0 +1,22 @@
+@import'variables/variables';
+@import'secciones/bio';
+@import'secciones/contacto';
+@import'secciones/hits';
+@import'secciones/home';
+@import'secciones/escritos';
+
+body {
+    color: #79443b;
+    background-color: #c0c6e1;
+}
+
+p {
+    font-weight: 300;    
+}
+
+header {
+    @include flex (flex, row, space-around, flex-end, wrap);
+    background-color: #c0c6e1;
+    font-size: 20px;
+    border-radius: 2px;
+}

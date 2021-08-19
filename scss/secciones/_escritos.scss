@@ -1,0 +1,44 @@
+@import '../variables/variables';
+
+.menuEscritos {
+    @include menu-2;
+}
+
+.frase-escritos {
+    margin: 9px auto;
+}
+
+.main {
+    background: rgb(228, 223, 223);
+
+    &__container {
+    text-align: right;
+    padding: 50px;
+    margin: 50px;
+    border: 2px solid #000;
+    }
+
+    &__flexContainer {
+    @include flex (flex, row, center, center, wrap);
+    .flex-item {
+        @include boxModel (7px, 15px, none);
+        width: 300px;
+        height: 300px;
+        font-style: italic;
+        background: rgb(122, 158, 175);
+        color: white;
+        font-weight: 150;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 5px;
+    }   
+}
+
+.item0:hover, .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
+    transform: scale(1.5);
+}
+
+.flex-item {
+    transition: all 2s;
+}
+}
